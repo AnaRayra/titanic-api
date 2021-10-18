@@ -32,7 +32,7 @@ def transforms_payload(payload: List) -> Dict:
 
     for row in payload:
         for key in transformed_payload.keys():
-            transformed_payload[key].append(row[key])
+            transformed_payload[key].append(row[key].lower())
 
     return transformed_payload
 

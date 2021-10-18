@@ -13,4 +13,4 @@ def get(name: str, pclass: int, sex: str, fare: float, decision: int) -> str:
         .replace("{pclass}", str(pclass))\
         .replace("{sex}", sex)\
         .replace("{fare}", str(fare))\
-        .replace("{decision}", "Unfortunately, No" if decision == 1 else "Happily, Sim")
+        .replace("{decision}", "Unfortunately, No" if decision == 1 else "Happily, Yes")

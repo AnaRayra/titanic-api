@@ -8,7 +8,7 @@ from app import app
 def home():
     return "API Available!!!"
 
-@app.route('/dothosepeoplewillsurvive/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def create_task():
     request_data = request.get_json()
     return {"response": service.people_prediction(request_data)}
